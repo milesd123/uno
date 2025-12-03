@@ -1,0 +1,73 @@
+// //
+// // Created by md on 11/29/25.
+// //
+
+// #ifndef ENUMS_H
+// #define ENUMS_H
+
+// enum class Card {
+//     BLUE_0,
+//     BLUE_1,
+//     BLUE_2,
+//     BLUE_3,
+//     BLUE_4,
+//     BLUE_5,
+//     BLUE_6,
+//     BLUE_7,
+//     BLUE_8,
+//     BLUE_9,
+//     BLUE_REVERSE,
+//     BLUE_SKIP,
+//     BLUE_PLUS_2,
+//     RED_0,
+//     RED_1,
+//     RED_2,
+//     RED_3,
+//     RED_4,
+//     RED_5,
+//     RED_6,
+//     RED_7,
+//     RED_8,
+//     RED_9,
+//     RED_REVERSE,
+//     RED_SKIP,
+//     RED_PLUS_2,
+//     GREEN_0,
+//     GREEN_1,
+//     GREEN_2,
+//     GREEN_3,
+//     GREEN_4,
+//     GREEN_5,
+//     GREEN_6,
+//     GREEN_7,
+//     GREEN_8,
+//     GREEN_9,
+//     GREEN_REVERSE,
+//     GREEN_SKIP,
+//     GREEN_PLUS_2,
+//     YELLOW_0,
+//     YELLOW_1,
+//     YELLOW_2,
+//     YELLOW_3,
+//     YELLOW_4,
+//     YELLOW_5,
+//     YELLOW_6,
+//     YELLOW_7,
+//     YELLOW_8,
+//     YELLOW_9,
+//     YELLOW_REVERSE,
+//     YELLOW_SKIP,
+//     YELLOW_PLUS_2,
+//     WILD_1,
+//     WILD_2,
+//     WILD_3,
+//     WILD_4,
+//     PLUS_4_1,
+//     PLUS_4_2,
+//     PLUS_4_3,
+//     PLUS_4_4,
+// };
+
+// extern "C" Card generator(int seed);
+
+// #endif //ENUMS_H

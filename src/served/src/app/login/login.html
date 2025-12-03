@@ -1,0 +1,58 @@
+<section class="login-card">
+  <header>
+    <h2>{{ mode() === 'login' ? 'Sign in' : 'Create account' }}</h2>
+    <p>Talk to the server on <code>http://localhost:3456</code>.</p>
+  </header>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label class="field">
+      <span>Username</span>
+      <input
+        type="text"
+        formControlName="username"
+        autocomplete="username"
+        [disabled]="submitting()"
+      />
+      <small *ngIf="form.get('username')?.invalid && form.get('username')?.touched">
+        Username must be at least 3 characters.
+      </small>
+    </label>
+
+    <label class="field">
+      <span>Password</span>
+      <input
+        type="password"
+        formControlName="password"
+        autocomplete="current-password"
+        [disabled]="submitting()"
+      />
+      <small *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+        Password must be at least 6 characters.
+      </small>
+    </label>
+
+    <label class="field" *ngIf="mode() === 'register'">
+      <span>Confirm password</span>
+      <input
+        type="password"
+        formControlName="confirmPassword"
+        autocomplete="new-password"
+        [disabled]="submitting()"
+      />
+    </label>
+
+    <div class="actions">
+      <button type="submit" [disabled]="submitting()">{{ mode() === 'login' ? 'Login' : 'Register' }}</button>
+      <button
+        type="button"
+        class="ghost"
+        (click)="switchMode(mode() === 'login' ? 'register' : 'login')"
+        [disabled]="submitting()"
+      >
+        {{ mode() === 'login' ? 'Need an account? Register' : 'Already have an account? Login' }}
+      </button>
+    </div>
+
+    <p class="status" *ngIf="statusMessage()">{{ statusMessage() }}</p>
+  </form>
+</section>
